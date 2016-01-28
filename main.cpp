@@ -38,7 +38,7 @@ class DeletedNode:public HashNode
         {
             if (entry == NULL)
                 entry = new DeletedNode();
-            return entry;
+            return entry; 
         }
 };
 DeletedNode *DeletedNode::entry = NULL;
@@ -175,21 +175,24 @@ int main()
         cout<<"\n----------------------"<<endl;
         cout<<"Operations on Hash Table"<<endl;
         cout<<"\n----------------------"<<endl;
-        cout<<"1.Insert element into the table"<<endl;
-        cout<<"2.Search element from the key"<<endl;
-        cout<<"3.Delete element at a key"<<endl;
-        cout<<"4.Exit"<<endl;
+        cout<<"insert <perm> <name> <GPA>"<<endl;
+        cout<<"lookup <perm>"<<endl;
+        cout<<"delete <perm>"<<endl;
+        cout<<"exit"<<endl;
         cout<<"Enter your choice: ";
         //cin>>choice;
+
+
         getline (cin,input);
         stringstream stream(input);
 
         stream >> operation;
+        stream >> key;
         stream >> value;
         //stream >> name;
         
         //stream >> gpa;
-        stream >> key;
+        
 
         if(operation == "insert")
             choice = 1;
@@ -220,7 +223,7 @@ int main()
             */
             if(hash.Search(key) == -1)
             {
-                cout<<"No element found at key "<<key<<endl;
+                cout<<"item not found"<<key<<endl;
                 continue;
             }
             else
