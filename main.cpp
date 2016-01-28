@@ -16,8 +16,8 @@ class HashNode
 {
     public:
         int key;
-        int value;
-        HashNode(int key, int value)
+        string value;
+        HashNode(int key, string value)
         {
             this->key = key;
             this->value = value;
@@ -31,7 +31,7 @@ class DeletedNode:public HashNode
 {
     private:
         static DeletedNode *entry;
-        DeletedNode():HashNode(-1, -1)
+        DeletedNode():HashNode(-1, "")
         {}
     public:
         static DeletedNode *getNode()
@@ -78,7 +78,7 @@ class HashMap
         /*
          * Insert Element at a key
          */
-        void Insert(int key, int value)
+        void Insert(int key, string value)
         {
             int hash_val = HashFunc(key);
             int init = -1;
@@ -117,7 +117,7 @@ class HashMap
         /*
          * Search Element at a key
          */
-        int Search(int key)
+        string Search(int key)
         {
             int hash_val = HashFunc(key);
             int init = -1;
@@ -129,8 +129,8 @@ class HashMap
                     init = hash_val;
                 hash_val = HashFunc(hash_val + 1);
             }
-            if (htable[hash_val]==NULL || hash_val==init)
-                return -1;
+            if (htable[hash_val]== NULL || hash_val==init)
+                return "NO";
             else
                 return htable[hash_val]->value;
         }
@@ -163,7 +163,8 @@ class HashMap
 int main()
 {
     HashMap hash;
-    int key, value;
+    int key; //value;
+    string value;
     double gpa;
     int choice;
     string input;
@@ -221,7 +222,7 @@ int main()
             cout<<"Enter key of the element to be searched: ";
             cin>>key;
             */
-            if(hash.Search(key) == -1)
+            if(hash.Search(key)=="NO")
             {
                 cout<<"item not found"<<key<<endl;
                 continue;
