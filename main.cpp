@@ -17,10 +17,12 @@ class HashNode
     public:
         int key;
         string value;
-        HashNode(int key, string value)
+        double gpa;
+        HashNode(int key, string value, double GPA)
         {
             this->key = key;
             this->value = value;
+            this->gpa = gpa;
         }
 };
  
@@ -31,7 +33,7 @@ class DeletedNode:public HashNode
 {
     private:
         static DeletedNode *entry;
-        DeletedNode():HashNode(-1, "")
+        DeletedNode():HashNode(-1, "", -1.0)
         {}
     public:
         static DeletedNode *getNode()
@@ -78,7 +80,7 @@ class HashMap
         /*
          * Insert Element at a key
          */
-        void Insert(int key, string value)
+        void Insert(int key, string value, double gpa)
         {
             int hash_val = HashFunc(key);
             int init = -1;
@@ -96,9 +98,9 @@ class HashMap
             if (htable[hash_val] == NULL || hash_val == init)
             {
                 if(deletedindex != -1)
-                    htable[deletedindex] = new HashNode(key, value);
+                    htable[deletedindex] = new HashNode(key, value, gpa);
                 else
-                    htable[hash_val] = new HashNode(key, value);
+                    htable[hash_val] = new HashNode(key, value, gpa);
             }
             if(init != hash_val)
             {
@@ -107,11 +109,14 @@ class HashMap
                     if (htable[hash_val] != NULL)
                     {
                         if (htable[hash_val]->key == key)
+                        {
                             htable[hash_val]->value = value;
+                            htable[hash_val]->gpa = gpa;
+                        }
                     }
                 }
                 else
-                    htable[hash_val] = new HashNode(key, value);
+                    htable[hash_val] = new HashNode(key, value, gpa);
             }
         }
         /*
@@ -164,6 +169,56 @@ class HashMap
                 htable[hash_val] = DeletedNode::getNode();
             }
         }
+
+        string print()
+        {
+            string print;
+            int hash_val = 0;
+            while(1)
+            {
+                if (hash_val == TSIZE)
+                    break;
+
+
+                if(htable[hash_val] == NULL)
+                {
+                    hash_val++;
+                    cout<<hash_val<<endl;
+                    continue;
+                }
+                
+                int perm = htable[hash_val]->key;
+                string name = htable[hash_val]->value;
+                double score = htable[hash_val]->gpa;
+
+                string permstr;
+                string scorestr;
+
+                stringstream convert;
+                convert << perm;
+                permstr = convert.str();
+
+                stringstream convert2;
+                convert2 << score;
+                scorestr = convert2.str();
+
+
+
+                print.append("(");
+                print.append(permstr);
+                print.append(",");
+                print.append(name);
+                print.append(",");
+                print.append(scorestr);
+                print.append(")");
+
+                hash_val++;                
+            }
+            return print;
+        }
+
+
+
 };
  
 /*
@@ -176,19 +231,22 @@ int main()
     string value;
     double gpa;
     int choice;
-    string input;
+    string input;immutable
     string operation;
     string name;
     //double gpa;
-    while(1)
-    {
-        cout<<"\n----------------------"<<endl;
+
+    cout<<"\n----------------------"<<endl;
         cout<<"Operations on Hash Table"<<endl;
         cout<<"\n----------------------"<<endl;
         cout<<"insert <perm> <name> <GPA>"<<endl;
         cout<<"lookup <perm>"<<endl;
         cout<<"delete <perm>"<<endl;
-        cout<<"exit"<<endl;
+
+    while(1)
+    {
+        
+
         //cin>>choice;
 
 
@@ -198,6 +256,7 @@ int main()
         stream >> operation;
         stream >> key;
         stream >> value;
+        stream >> gpa;
         //stream >> name;
         
         //stream >> gpa;
@@ -207,9 +266,12 @@ int main()
             choice = 1;
         else if (operation == "lookup")
             choice = 2;
-        else if (operation == "remove")
+        else if (operation == "delete")
             choice = 3;
-
+        else if (operation == "print")
+            choice = 4;
+        else
+            choice = -1;
 
 
         switch(choice)
@@ -222,9 +284,11 @@ int main()
             cin>>key;
             */
 
-            hash.Insert(key, value);
+            hash.Insert(key, value, gpa);
+          //  cout<<key<<" "<<value<<" "<<gpa<<" "<<endl;
             cout<<"item successfully inserted"<<endl;
             break;
+
         case 2:
             /*
             cout<<"Enter key of the element to be searched: ";
@@ -241,6 +305,7 @@ int main()
                 cout<<hash.Search(key)<<endl;
             }
             break;
+            
         case 3:
             
             hash.Remove(key);
@@ -248,7 +313,8 @@ int main()
             break;
 
         case 4:
-            exit(1);
+            cout<<hash.print()<<endl;
+            break;
         default:
            cout<<"\nEnter correct option\n";
        }
