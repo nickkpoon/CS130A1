@@ -132,7 +132,16 @@ class HashMap
             if (htable[hash_val]== NULL || hash_val==init)
                 return "NO";
             else
-                return htable[hash_val]->value;
+            {
+                int position = hash_val+1;
+                string value = htable[hash_val]->value;
+                string index;
+                stringstream convert;
+                convert << position;
+                index = convert.str();
+
+                return value + " " + index;
+            }
         }
         /*
          * Remove Element at a key
@@ -180,7 +189,6 @@ int main()
         cout<<"lookup <perm>"<<endl;
         cout<<"delete <perm>"<<endl;
         cout<<"exit"<<endl;
-        cout<<"Enter your choice: ";
         //cin>>choice;
 
 
@@ -224,12 +232,12 @@ int main()
             */
             if(hash.Search(key)=="NO")
             {
-                cout<<"item not found"<<key<<endl;
+                cout<<"item not found"<<endl;
                 continue;
             }
             else
             {
-                cout<<"Element at key "<<key<<" : ";
+                cout<<"item found at "<<key<<" ; ";
                 cout<<hash.Search(key)<<endl;
             }
             break;
