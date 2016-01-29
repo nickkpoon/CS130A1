@@ -75,7 +75,7 @@ class HashMap
          */
         int HashFunc(int key)
         {
-            return key % TSIZE;
+            return (key%492113) % TSIZE;
         }
         /*
          * Insert Element at a key
@@ -154,7 +154,7 @@ class HashMap
                 return "NO";
             else
             {
-                int position = hash_val+1;
+                int position = hash_val; //might need +1
                 string value = htable[hash_val]->value;
                 string index;
                 stringstream convert;
@@ -267,11 +267,11 @@ int main()
     //double gpa;
 
     cout<<"\n----------------------"<<endl;
-        cout<<"Operations on Hash Table"<<endl;
-        cout<<"\n----------------------"<<endl;
-        cout<<"insert <perm> <name> <GPA>"<<endl;
-        cout<<"lookup <perm>"<<endl;
-        cout<<"delete <perm>"<<endl;
+    cout<<"Operations on Hash Table"<<endl;
+    cout<<"\n----------------------"<<endl;
+    cout<<"insert <perm> <name> <GPA>"<<endl;
+    cout<<"lookup <perm>"<<endl;
+    cout<<"delete <perm>"<<endl;
 
     while(1)
     {
