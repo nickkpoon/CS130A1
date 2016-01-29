@@ -8,7 +8,7 @@
 #include <sstream>
 using namespace std;
 const int TSIZE = 5;
- 
+ int currentsize = TSIZE;
 /*
  * HashNode Class Declaration
  */
@@ -95,6 +95,15 @@ class HashMap
                     deletedindex = hash_val;
                 hash_val = HashFunc(hash_val + 1);
             }
+
+            if(htable[hash_val] != NULL && 
+                hash_val != init &&
+                htable[hash_val]->key == key) 
+            {
+                cout<<"item already present"<<endl;
+                return;
+
+            }
             if (htable[hash_val] == NULL || hash_val == init)
             {
                 if(deletedindex != -1)
@@ -112,11 +121,16 @@ class HashMap
                         {
                             htable[hash_val]->value = value;
                             htable[hash_val]->gpa = gpa;
+                            cout<<"item successfully inserted"<<endl;
+                            
                         }
                     }
                 }
                 else
+                {
                     htable[hash_val] = new HashNode(key, value, gpa);
+                    cout<<"item successfully inserted2222"<<endl;
+                }
             }
         }
         /*
@@ -291,7 +305,7 @@ int main()
 
             hash.Insert(key, value, gpa);
           //  cout<<key<<" "<<value<<" "<<gpa<<" "<<endl;
-            cout<<"item successfully inserted"<<endl;
+            //cout<<"item successfully inserted"<<endl;
             break;
 
         case 2:
