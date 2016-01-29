@@ -8,7 +8,7 @@
 #include <sstream>
 using namespace std;
 const int TSIZE = 5;
- int currentsize = TSIZE;
+ 
 /*
  * HashNode Class Declaration
  */
@@ -110,6 +110,8 @@ class HashMap
                     htable[deletedindex] = new HashNode(key, value, gpa);
                 else
                     htable[hash_val] = new HashNode(key, value, gpa);
+
+                cout<<"item successfully inserted"<<endl;
             }
             if(init != hash_val)
             {
@@ -121,7 +123,7 @@ class HashMap
                         {
                             htable[hash_val]->value = value;
                             htable[hash_val]->gpa = gpa;
-                            cout<<"item successfully inserted"<<endl;
+                            //cout<<"item successfully inserted"<<endl;
                             
                         }
                     }
@@ -169,6 +171,14 @@ class HashMap
         {
             int hash_val = HashFunc(key);
             int init = -1;
+            if(htable[hash_val] == NULL || 
+                hash_val == init ||
+                htable[hash_val]->key != key) 
+            {
+                cout<<"item not present in the table"<<endl;
+                return;
+
+            }
             while (hash_val != init&&(htable[hash_val]
                             == DeletedNode::getNode() || htable[hash_val]
                             != NULL&&htable[hash_val]->key!=key))
@@ -181,6 +191,7 @@ class HashMap
             {
                 delete htable[hash_val];
                 htable[hash_val] = DeletedNode::getNode();
+                cout<<"item successfully deleted"<<endl;
             }
         }
 
@@ -196,7 +207,7 @@ class HashMap
                 if(htable[hash_val] == NULL)
                 {
                     hash_val++;
-                    cout<<hash_val<<endl;
+                   // cout<<hash_val<<endl; FOR DEBUGGING
                     continue;
                 }
 
@@ -328,7 +339,7 @@ int main()
         case 3:
             
             hash.Remove(key);
-            cout<<"item successfully deleted"<<endl;
+            //cout<<"item successfully deleted"<<endl;
             break;
 
         case 4:
