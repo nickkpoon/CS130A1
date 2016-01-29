@@ -178,12 +178,17 @@ class HashMap
             {
                 if (hash_val == TSIZE)
                     break;
-
-
+                
                 if(htable[hash_val] == NULL)
                 {
                     hash_val++;
                     cout<<hash_val<<endl;
+                    continue;
+                }
+
+                if (htable[hash_val]->key == -1)
+                {
+                    hash_val++;
                     continue;
                 }
                 
@@ -231,7 +236,7 @@ int main()
     string value;
     double gpa;
     int choice;
-    string input;immutable
+    string input;
     string operation;
     string name;
     //double gpa;
@@ -305,7 +310,7 @@ int main()
                 cout<<hash.Search(key)<<endl;
             }
             break;
-            
+
         case 3:
             
             hash.Remove(key);
