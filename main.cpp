@@ -6,8 +6,12 @@
 #include <cstdlib>
 #include <string>
 #include <sstream>
+#include <stdio.h>
+#include <iterator>
 using namespace std;
-const int TSIZE = 5;
+const int FACTOR = 0.7;
+int tsize = 5;
+double current = 0.0;
  
 /*
  * HashNode Class Declaration
@@ -33,7 +37,7 @@ class DeletedNode:public HashNode
 {
     private:
         static DeletedNode *entry;
-        DeletedNode():HashNode(-1, "", -1.0)
+        DeletedNode():HashNode(-1, "", 0.0)
         {}
     public:
         static DeletedNode *getNode()
@@ -54,8 +58,8 @@ class HashMap
     public:
         HashMap()
         {
-            htable = new HashNode* [TSIZE];
-            for (int i = 0; i < TSIZE; i++)
+            htable = new HashNode* [tsize];
+            for (int i = 0; i < tsize; i++)
             {
                 htable[i] = NULL;
             }
@@ -63,7 +67,7 @@ class HashMap
  
         ~HashMap()
         {
-            for (int i = 0; i < TSIZE; i++)
+            for (int i = 0; i < tsize; i++)
             {
                 if (htable[i] != NULL && htable[i] != DeletedNode::getNode())
                     delete htable[i];
@@ -75,13 +79,204 @@ class HashMap
          */
         int HashFunc(int key)
         {
-            return (key%492113) % TSIZE;
+            return (key%492113) % tsize;
         }
+
         /*
+        *
+        * 
+        * LOOKING FOR PRIME 
+        *
+        */
+
+        bool isPrime(int n)
+        {
+            //loop from 2 to n/2 to check for factors
+            for (int i = 2; i <= n/2; i++)
+            {
+                if (n % i == 0)     //found a factor that isn't 1 or n, therefore not prime
+                    return false;
+            }
+
+            return true;
+        }
+
+        int findNextPrime(int n)
+        {
+            int nextPrime = n;
+            bool found = false;
+
+            if(isPrime(n))
+                return n;
+
+            //loop continuously until isPrime returns true for a number above n
+            while (!found)
+            {
+                nextPrime++;
+                if (isPrime(nextPrime))
+                    found = true;
+            }
+
+            return nextPrime;
+        }
+        
+        /*
+         *
+         * Basically insert for rehashing purposes
+         *
+         */
+
+        void rehash(int key, string value, double gpa)
+        {
+            int hash_val = HashFunc(key);
+            int init = -1;
+            int deletedindex = -1;
+            while (hash_val != init && (htable[hash_val]
+                            == DeletedNode::getNode() || htable[hash_val]
+                            != NULL && htable[hash_val]->key != key))
+            {
+                if (init == -1)
+                    init = hash_val;
+                if (htable[hash_val] == DeletedNode::getNode())
+                    deletedindex = hash_val;
+                hash_val = HashFunc(hash_val + 1);
+            }
+
+            /*if(htable[hash_val] != NULL && 
+                hash_val != init &&
+                htable[hash_val]->key == key) 
+            {
+                return;
+            }*/
+
+            if (htable[hash_val] == NULL || hash_val == init)
+            {
+                if(deletedindex != -1)
+                    htable[deletedindex] = new HashNode(key, value, gpa);
+                else
+                    htable[hash_val] = new HashNode(key, value, gpa);
+            }
+
+            if(init != hash_val)
+            {
+                if (htable[hash_val] != DeletedNode::getNode())
+                {
+                    if (htable[hash_val] != NULL)
+                    {
+                        if (htable[hash_val]->key == key)
+                        {
+                            htable[hash_val]->value = value;
+                            htable[hash_val]->gpa = gpa;
+                        }
+                    }
+                }
+                else
+                    htable[hash_val] = new HashNode(key, value, gpa);
+            }
+        }
+
+        /*
+        * 
+        * DOUBLE
+        *
+        */
+
+        bool doubled()
+        {
+            int oldsize = tsize;
+            int newsize = findNextPrime(tsize*2);
+
+
+            double load = current / oldsize;
+            cout<<load<<endl;
+
+
+
+            //cout<<newsize<<endl;
+            if (load > 0.7)
+            {
+                HashNode** ntable = new HashNode* [newsize]; //clear table
+                HashNode** otable = htable;
+                tsize = newsize;
+                htable = ntable;
+
+                for(int i = 0; i < oldsize; i++)
+                {
+                    if(otable[i] != NULL)
+                    {
+                        int oldkey = otable[i]->key;
+                        string oldvalue = otable[i]->value;
+                        double oldgpa = otable[i]->gpa;
+
+                        rehash(oldkey, oldvalue, oldgpa);
+                    }
+                    else
+                    {
+                        continue;
+                    }
+
+
+                    /*int hash_val = HashFunc(oldkey);
+                    int init = -1;
+                    int deletedindex = -1;
+
+                                        
+                    if (ntable[hash_val] == NULL || hash_val == init)
+                    {
+                        if(deletedindex != -1)
+                            ntable[deletedindex] = new HashNode(oldkey, oldvalue, oldgpa);
+                        else
+                            ntable[hash_val] = new HashNode(oldkey, oldvalue, oldgpa);
+                    }
+
+                    /*if(init != hash_val)
+                    {
+                        if (ntable[hash_val] != DeletedNode::getNode())
+                        {
+                            if (ntable[hash_val] != NULL)
+                            {
+                                if (ntable[hash_val]->key == oldkey)
+                                {
+                                    ntable[hash_val]->value = oldvalue;
+                                    ntable[hash_val]->gpa = oldgpa;
+                                }
+                            }
+                        }
+                        else
+                            ntable[hash_val] = new HashNode(oldkey, oldvalue, oldgpa);
+                    }*/
+                }
+                
+
+
+                
+                //htable = ntable;
+
+                
+                
+
+                return true; //1 means DOUBLED;
+            }
+
+            return false;
+
+        }
+        
+
+        
+
+        /*
+         *
+         *
+         *
+         *
          * Insert Element at a key
          */
         void Insert(int key, string value, double gpa)
         {
+            current++;
+                if(doubled())
+                    cout<<"table doubled"<<endl;
             int hash_val = HashFunc(key);
             int init = -1;
             int deletedindex = -1;
@@ -111,7 +306,9 @@ class HashMap
                 else
                     htable[hash_val] = new HashNode(key, value, gpa);
 
+                
                 cout<<"item successfully inserted"<<endl;
+                
             }
             if(init != hash_val)
             {
@@ -154,12 +351,12 @@ class HashMap
                 return "NO";
             else
             {
-                int position = hash_val; //might need +1
+                int position = hash_val; //might need +1    
                 string value = htable[hash_val]->value;
                 string index;
-                stringstream convert;
-                convert << position;
-                index = convert.str();
+                stringstream conv;
+                conv << position;
+                index = conv.str();
 
                 return value + " " + index;
             }
@@ -201,13 +398,13 @@ class HashMap
             int hash_val = 0;
             while(1)
             {
-                if (hash_val == TSIZE)
+                if (hash_val > tsize-1)
                     break;
-                
+            
                 if(htable[hash_val] == NULL)
                 {
                     hash_val++;
-                   // cout<<hash_val<<endl; FOR DEBUGGING
+                    cout<<hash_val<<endl; //DEBUGGING
                     continue;
                 }
 
@@ -231,8 +428,6 @@ class HashMap
                 stringstream convert2;
                 convert2 << score;
                 scorestr = convert2.str();
-
-
 
                 print.append("(");
                 print.append(permstr);
