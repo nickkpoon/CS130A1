@@ -8,6 +8,7 @@
 #include <sstream>
 #include <stdio.h>
 #include <iterator>
+#include <iomanip>
 #define MIN_TABLE_SIZE 5
 using namespace std;
 bool success = false;
@@ -120,7 +121,7 @@ void remove(int key, HashTable *htable)
     if(key == htable->table[pos].key&&htable->table[pos].info==Legitimate)
         {
             htable->table[pos].info = Deleted;
-            cout<<"item successfully deleted; "<<htable->table[pos].name<<" "<<pos<<endl;
+            cout<<"item successfully deleted "<<endl;
         }
     else
         cout<<"item not present in the table"<<endl;
@@ -186,7 +187,11 @@ void Retrieve(HashTable *htable)
         else if(htable->table[i].info == Deleted)
             continue;
         else
-            cout<<"("<<value<<","<<name<<","<<gpa<<")";
+        {
+            cout<<"("<<value<<","<<name<<",";
+            cout<<std::fixed<<std::setprecision(1)<<gpa;
+            cout<<")";
+        }
     }
     cout<<endl;
  
@@ -232,87 +237,85 @@ void Retrieve(HashTable *htable)
 int main()
 {
     int ret, key, value, size, pos, i = 1;
-    string name, input, operation;
+    string name, input, operation, hashkind, op;
     double gpa;
     int choice;
     HashTable *htable;
     htable = initializeTable(5);
 
-        cout<<"\n----------------------"<<endl;
-        cout<<"Operations on Double Hashing"<<endl;
-        cout<<"\n----------------------"<<endl;
-        cout<<"1.Initialize size of the table"<<endl;
-        cout<<"2.Insert key into the table"<<endl;
-        cout<<"3.Display Hash Table"<<endl;
-        cout<<"4.Rehash The Table"<<endl;
-        cout<<"5.Exit"<<endl;
-        cout<<"Enter your choice: ";
-    while(1)
+    getline(cin,hashkind);
+    stringstream stream0(hashkind);
+
+    stream0 >> op;
+
+    if(op == "doublehashing")
     {
-        
-        //cin>>choice;
-
-        getline (cin,input);
-        stringstream stream(input);
-
-        stream >> operation;
-        stream >> key;
-        stream >> name;
-        stream >> gpa;
-
-        if(operation == "insert")
-            choice = 1;
-        else if (operation == "lookup")
-            choice = 2;
-        else if (operation == "delete")
-            choice = 3;
-        else if (operation == "print")
-            choice = 4;
-        else if (operation == "rehash")
-            choice = 5;
-        else
-            choice = -1;
-
-
-        switch(choice)
+        while(1)
         {
-        case 1:
-            i++;
-            if ((i / htable->size) > 0.7)
-            {
-                htable = Rehash(htable);
-                cout<<"table doubled"<<endl;
-                //continue;
-            }
-            Insert(key, name, gpa, htable);
-            if(success)
-                cout<<"item successfully inserted"<<endl;
+            
+            //cin>>choice;
+
+            getline (cin,input);
+            stringstream stream(input);
+
+            stream >> operation;
+            stream >> key;
+            stream >> name;
+            stream >> gpa;
+
+            if(operation == "insert")
+                choice = 1;
+            else if (operation == "lookup")
+                choice = 2;
+            else if (operation == "delete")
+                choice = 3;
+            else if (operation == "print")
+                choice = 4;
+            else if (operation == "rehash")
+                choice = 5;
             else
-                cout<<"item already present"<<endl;
+                choice = -1;
+
+
+            switch(choice)
+            {
+            case 1:
+                i++;
+                if ((i / htable->size) > 0.7)
+                {
+                    htable = Rehash(htable);
+                    cout<<"table doubled"<<endl;
+                    //continue;
+                }
+                Insert(key, name, gpa, htable);
+                if(success)
+                    cout<<"item successfully inserted"<<endl;
+                else
+                    cout<<"item already present"<<endl;
+                
+                
+                break;
+            case 2:
+                lookup(key, htable);
+                break;
+               
             
-            
-            break;
-        case 2:
-            lookup(key, htable);
-            break;
-           
-        
-        case 3:
-            remove(key, htable);
-            break;
+            case 3:
+                remove(key, htable);
+                break;
 
-        case 4:
-            Retrieve(htable);
-            break;
+            case 4:
+                Retrieve(htable);
+                break;
 
-        case 5:
-            htable = Rehash(htable);
-            break;
-        case 6:
-            exit(1);
-        default:
-           cout<<"\nEnter correct option\n";
-
+            case 5:
+                htable = Rehash(htable);
+                break;
+            case 6:
+                exit(1);
+            default:
+               cout<<"\nEnter correct option\n";
+        }
 
 
 
