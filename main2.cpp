@@ -118,7 +118,7 @@ void remove(int key, HashTable *htable)
     int pos = Find(key, htable);
     if(key == htable->table[pos].key&&htable->table[pos].info==Legitimate)
         {
-            htable->table[pos].info==Deleted;
+            htable->table[pos].info = Deleted;
             cout<<"item successfully deleted; "<<htable->table[pos].name<<" "<<pos<<endl;
         }
     else
@@ -173,13 +173,15 @@ void Retrieve(HashTable *htable)
 {
     for (int i = 0; i < htable->size; i++)
     {
-        cout<<"forloop working."<<endl;
+        //<<"forloop working."<<endl;
         int value = htable->table[i].key;
         string name = htable->table[i].name;
         double gpa = htable->table[i].gpa;
 
-        if (!value)
-            cout<<"Position: "<<i + 1<<" key: Null"<<endl;
+        if (value == -1)
+            continue;
+        else if(htable->table[i].info == Deleted)
+            continue;
         else
             cout<<"("<<value<<","<<name<<","<<gpa<<")";
     }
