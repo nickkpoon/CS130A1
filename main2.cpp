@@ -10,6 +10,7 @@
 #include <iterator>
 #define MIN_TABLE_SIZE 5
 using namespace std;
+bool success = false;
 
 bool isPrime(int x);
 int findNextPrime(int y);
@@ -129,11 +130,12 @@ void remove(int key, HashTable *htable)
  */
 void Insert(int key, string name, double gpa, HashTable *htable)
 {
-    cout<<"insertting"<<endl;
+    //cout<<"insertting"<<endl;
     int pos = Find(key, htable);
     if (htable->table[pos].info == Legitimate && htable->table[pos].key == key)
     {
-        cout<<"item already present"<<endl;
+        //cout<<"item already present"<<endl;
+        success = false;
         return;
     }
     
@@ -143,7 +145,8 @@ void Insert(int key, string name, double gpa, HashTable *htable)
         htable->table[pos].key = key;
         htable->table[pos].name = name;
         htable->table[pos].gpa = gpa;
-        cout<<"item successfully inserted"<<endl;
+        success = true;
+        //cout<<"item successfully inserted"<<endl;
     }
 }
 /*
@@ -157,7 +160,7 @@ HashTable *Rehash(HashTable *htable)
     htable = initializeTable(newsize);
     for (int i = 0; i < size; i++)
     {
-        cout<<"rehash forloop working"<<endl;
+        //cout<<"rehash forloop working"<<endl;
         if (table[i].info == Legitimate)
             Insert(table[i].key, table[i].name, table[i].gpa, htable);
     }
@@ -279,9 +282,14 @@ int main()
             {
                 htable = Rehash(htable);
                 cout<<"table doubled"<<endl;
-                continue;
+                //continue;
             }
             Insert(key, name, gpa, htable);
+            if(success)
+                cout<<"item successfully inserted"<<endl;
+            else
+                cout<<"item already present"<<endl;
+            
             
             break;
         case 2:
