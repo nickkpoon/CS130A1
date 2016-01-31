@@ -50,7 +50,10 @@ int HashFunc1(int key, int size)
  */
 int HashFunc2(int key, int size)
 {
-    return (key % 392113) % size;
+    if ((key % 392113) % size == 0) 
+        return 1;
+    else
+        return (key % 392113) % size;
 }
 /*
  * Function to Initialize Table
@@ -79,9 +82,9 @@ HashTable *initializeTable(int size)
     for (int i = 0; i < htable->size; i++)
     {
         htable->table[i].info = Empty;
-        htable->table[i].key = NULL;
+        htable->table[i].key = -1;
         htable->table[i].name = "";
-        htable->table[i].gpa = NULL;
+        htable->table[i].gpa = -1;
     }
     return htable;
 }
@@ -126,9 +129,13 @@ void remove(int key, HashTable *htable)
  */
 void Insert(int key, string name, double gpa, HashTable *htable)
 {
+    cout<<"insertting"<<endl;
     int pos = Find(key, htable);
     if (htable->table[pos].info == Legitimate && htable->table[pos].key == key)
+    {
         cout<<"item already present"<<endl;
+        return;
+    }
     
     if (htable->table[pos].info != Legitimate )
     {
@@ -145,16 +152,18 @@ void Insert(int key, string name, double gpa, HashTable *htable)
 HashTable *Rehash(HashTable *htable)
 {
     int size = htable->size;
+    int newsize = findNextPrime(2*size);
     HashNode *table = htable->table;
-    htable = initializeTable(findNextPrime(2*size));
+    htable = initializeTable(newsize);
     for (int i = 0; i < size; i++)
     {
+        cout<<"rehash forloop working"<<endl;
         if (table[i].info == Legitimate)
-        {
             Insert(table[i].key, table[i].name, table[i].gpa, htable);
-        }
     }
-    free(table);
+    //free(table);
+    cout<<"rehash successful"<<endl;
+
     return htable;
 }
 /*
@@ -164,8 +173,8 @@ void Retrieve(HashTable *htable)
 {
     for (int i = 0; i < htable->size; i++)
     {
+        cout<<"forloop working."<<endl;
         int value = htable->table[i].key;
-
         string name = htable->table[i].name;
         double gpa = htable->table[i].gpa;
 
@@ -254,6 +263,8 @@ int main()
             choice = 3;
         else if (operation == "print")
             choice = 4;
+        else if (operation == "rehash")
+            choice = 5;
         else
             choice = -1;
 
@@ -261,13 +272,15 @@ int main()
         switch(choice)
         {
         case 1:
+            i++;
             if ((i / htable->size) > 0.7)
             {
-                cout<<"Table is Full, Rehash the table"<<endl;
+                htable = Rehash(htable);
+                cout<<"table doubled"<<endl;
                 continue;
             }
             Insert(key, name, gpa, htable);
-            i++;
+            
             break;
         case 2:
             lookup(key, htable);
