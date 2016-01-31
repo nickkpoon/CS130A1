@@ -80,6 +80,8 @@ HashTable *initializeTable(int size)
     {
         htable->table[i].info = Empty;
         htable->table[i].key = NULL;
+        htable->table[i].name = "";
+        htable->table[i].gpa = NULL;
     }
     return htable;
 }
@@ -105,6 +107,18 @@ void lookup(int key, HashTable *htable)
     if(key == htable->table[pos].key&&htable->table[pos].info==Legitimate)
         cout<<"item found; "<<htable->table[pos].name<<" "<<pos<<endl;
     else
+        cout<<"item not found"<<endl;
+}
+
+void remove(int key, HashTable *htable)
+{
+    int pos = Find(key, htable);
+    if(key == htable->table[pos].key&&htable->table[pos].info==Legitimate)
+        {
+            htable->table[pos].info==Deleted;
+            cout<<"item successfully deleted; "<<htable->table[pos].name<<" "<<pos<<endl;
+        }
+    else
         cout<<"item not present in the table"<<endl;
 }
 /*
@@ -113,12 +127,16 @@ void lookup(int key, HashTable *htable)
 void Insert(int key, string name, double gpa, HashTable *htable)
 {
     int pos = Find(key, htable);
+    if (htable->table[pos].info == Legitimate && htable->table[pos].key == key)
+        cout<<"item already present"<<endl;
+    
     if (htable->table[pos].info != Legitimate )
     {
         htable->table[pos].info = Legitimate;
         htable->table[pos].key = key;
         htable->table[pos].name = name;
         htable->table[pos].gpa = gpa;
+        cout<<"item successfully inserted"<<endl;
     }
 }
 /*
@@ -257,12 +275,13 @@ int main()
            
         
         case 3:
-            Retrieve(htable);
+            remove(key, htable);
             break;
 
         case 4:
             Retrieve(htable);
             break;
+
         case 5:
             htable = Rehash(htable);
             break;
