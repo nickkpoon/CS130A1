@@ -16,7 +16,7 @@ bool success = false;
 bool isPrime(int x);
 int findNextPrime(int y);
 
-int i = 1;
+double i = 0.0;
 
 int Hash1(int key, int size)
 {
@@ -200,6 +200,8 @@ int main()
     int choice;
     HashTable *htable;
     htable = initializeTable(5);
+    double factor;
+
 
     getline(cin,hashkind);
     
@@ -252,7 +254,9 @@ int main()
                         break;
                     }
                     i++;
-                    if ((i / htable->size) > 0.7)
+                    factor = (i / htable->size);
+                    //cout<<factor<<endl;
+                    if (factor >= 0.7)
                     {
                         htable = Rehash(htable);
                         cout<<"table doubled"<<endl;
