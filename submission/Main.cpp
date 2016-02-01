@@ -90,7 +90,7 @@ void remove(int key, HashTable *htable)
     if(key == htable->table[pos].key&&htable->table[pos].status==Legitimate)
         {
             htable->table[pos].status = Deleted;
-            cout<<"item successfully deleted "<<endl;
+            cout<<"item successfully deleted"<<endl;
         }
     else
         cout<<"item not present in the table"<<endl;
@@ -202,18 +202,24 @@ int main()
     htable = initializeTable(5);
 
     getline(cin,hashkind);
+    
     stringstream stream0(hashkind);
 
     stream0 >> op;
 
     if(op == "doublehashing")
     {
-        while(1)
+        while(getline (cin,input))
         {
             
             //cin>>choice;
 
-            getline (cin,input);
+            //getline (cin,input);
+            /*if (!getline(cin, hashkind));
+            {
+                cout<<"!getLine"<<endl;
+                return 0;
+            }*/
             stringstream stream(input);
 
             stream >> operation;
@@ -232,12 +238,19 @@ int main()
             else if (operation == "rehash")
                 choice = 5;
             else
-                choice = -1;
+                choice = 6;
 
 
             switch(choice)
             {
                 case 1:
+                    
+                    pos = Find(key, htable);
+                    if (htable->table[pos].status == Legitimate && htable->table[pos].key == key)
+                    {
+                        cout<<"item already present"<<endl;
+                        break;
+                    }
                     i++;
                     if ((i / htable->size) > 0.7)
                     {
@@ -249,7 +262,7 @@ int main()
                     if(success)
                         cout<<"item successfully inserted"<<endl;
                     else
-                        cout<<"item already present"<<endl;
+                        cout<<"BAD!!!!!!!item already present"<<endl;
                     
                     
                     break;
