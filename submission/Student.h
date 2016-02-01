@@ -6,7 +6,7 @@
 
 
 
-enum EntryType {Legitimate, Empty, Deleted};
+enum EntryType {Full, Empty, Deleted};
 
 
 struct Student
