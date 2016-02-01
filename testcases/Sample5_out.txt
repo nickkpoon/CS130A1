@@ -1,0 +1,181 @@
+item successfully inserted
+item not present in the table
+(1906688,Epza,0.9)
+(1906688,Epza,0.9)
+(1906688,Epza,0.9)
+item not present in the table
+item not found
+item not found
+item successfully inserted
+(8215981,Adwls,2.6)(1906688,Epza,0.9)
+item not present in the table
+item not found
+(8215981,Adwls,2.6)(1906688,Epza,0.9)
+(8215981,Adwls,2.6)(1906688,Epza,0.9)
+item not found
+(8215981,Adwls,2.6)(1906688,Epza,0.9)
+(8215981,Adwls,2.6)(1906688,Epza,0.9)
+item not present in the table
+item successfully inserted
+(8358948,Qqprxdjixjn,0.6)(8215981,Adwls,2.6)(1906688,Epza,0.9)
+(8358948,Qqprxdjixjn,0.6)(8215981,Adwls,2.6)(1906688,Epza,0.9)
+item not present in the table
+table doubled
+item successfully inserted
+(4023850,Jwgpvlym,0.3)(8215981,Adwls,2.6)(1906688,Epza,0.9)(8358948,Qqprxdjixjn,0.6)
+(4023850,Jwgpvlym,0.3)(8215981,Adwls,2.6)(1906688,Epza,0.9)(8358948,Qqprxdjixjn,0.6)
+item successfully inserted
+item not found
+(6757423,Ywwnbndy,2.9)(4023850,Jwgpvlym,0.3)(8215981,Adwls,2.6)(1906688,Epza,0.9)(8358948,Qqprxdjixjn,0.6)
+item successfully inserted
+(6757423,Ywwnbndy,2.9)(4023850,Jwgpvlym,0.3)(8215981,Adwls,2.6)(1906688,Epza,0.9)(5592632,Xfxs,1.5)(8358948,Qqprxdjixjn,0.6)
+item successfully inserted
+item not present in the table
+(6757423,Ywwnbndy,2.9)(4023850,Jwgpvlym,0.3)(8215981,Adwls,2.6)(1906688,Epza,0.9)(5592632,Xfxs,1.5)(5241177,Iqi,2.2)(8358948,Qqprxdjixjn,0.6)
+item not found
+item not found
+item not present in the table
+(6757423,Ywwnbndy,2.9)(4023850,Jwgpvlym,0.3)(8215981,Adwls,2.6)(1906688,Epza,0.9)(5592632,Xfxs,1.5)(5241177,Iqi,2.2)(8358948,Qqprxdjixjn,0.6)
+item not present in the table
+item not present in the table
+(6757423,Ywwnbndy,2.9)(4023850,Jwgpvlym,0.3)(8215981,Adwls,2.6)(1906688,Epza,0.9)(5592632,Xfxs,1.5)(5241177,Iqi,2.2)(8358948,Qqprxdjixjn,0.6)
+item not found
+table doubled
+item successfully inserted
+item not present in the table
+item not present in the table
+item not present in the table
+item successfully inserted
+item successfully inserted
+item not present in the table
+item successfully inserted
+item successfully inserted
+(4576867,Ktvngqj,1.6)(8358948,Qqprxdjixjn,0.6)(8215981,Adwls,2.6)(6757423,Ywwnbndy,2.9)(4723307,Oolsn,3.8)(4023850,Jwgpvlym,0.3)(5241177,Iqi,2.2)(5592632,Xfxs,1.5)(2405465,Hlbsxnrae,1.1)(8306789,Gohh,3.0)(1906688,Epza,0.9)(6239849,Qfzosg,3.2)
+item not found
+item not found
+item successfully inserted
+item not found
+item successfully inserted
+item successfully inserted
+(4576867,Ktvngqj,1.6)(8358948,Qqprxdjixjn,0.6)(8215981,Adwls,2.6)(6757423,Ywwnbndy,2.9)(4723307,Oolsn,3.8)(4023850,Jwgpvlym,0.3)(3520631,Ophhnlhsszq,1.2)(5241177,Iqi,2.2)(5592632,Xfxs,1.5)(2405465,Hlbsxnrae,1.1)(7522432,Hsyyzgawi,3.1)(8306789,Gohh,3.0)(1906688,Epza,0.9)(6239849,Qfzosg,3.2)(3869311,Dxrtrerl,0.0)
+(4576867,Ktvngqj,1.6)(8358948,Qqprxdjixjn,0.6)(8215981,Adwls,2.6)(6757423,Ywwnbndy,2.9)(4723307,Oolsn,3.8)(4023850,Jwgpvlym,0.3)(3520631,Ophhnlhsszq,1.2)(5241177,Iqi,2.2)(5592632,Xfxs,1.5)(2405465,Hlbsxnrae,1.1)(7522432,Hsyyzgawi,3.1)(8306789,Gohh,3.0)(1906688,Epza,0.9)(6239849,Qfzosg,3.2)(3869311,Dxrtrerl,0.0)
+item not found
+item not present in the table
+item successfully inserted
+item not present in the table
+item not present in the table
+table doubled
+item successfully inserted
+item successfully inserted
+item not found
+item not present in the table
+(8358948,Qqprxdjixjn,0.6)(2405465,Hlbsxnrae,1.1)(6239849,Qfzosg,3.2)(6071464,Qdoizmunt,2.8)(8215981,Adwls,2.6)(3869311,Dxrtrerl,0.0)(8306789,Gohh,3.0)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(5241177,Iqi,2.2)(6757423,Ywwnbndy,2.9)(3520631,Ophhnlhsszq,1.2)(392857,Mlwqbk,1.9)(4576867,Ktvngqj,1.6)(2638449,Uxm,0.9)(5592632,Xfxs,1.5)(1906688,Epza,0.9)(4023850,Jwgpvlym,0.3)
+(8358948,Qqprxdjixjn,0.6)(2405465,Hlbsxnrae,1.1)(6239849,Qfzosg,3.2)(6071464,Qdoizmunt,2.8)(8215981,Adwls,2.6)(3869311,Dxrtrerl,0.0)(8306789,Gohh,3.0)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(5241177,Iqi,2.2)(6757423,Ywwnbndy,2.9)(3520631,Ophhnlhsszq,1.2)(392857,Mlwqbk,1.9)(4576867,Ktvngqj,1.6)(2638449,Uxm,0.9)(5592632,Xfxs,1.5)(1906688,Epza,0.9)(4023850,Jwgpvlym,0.3)
+item not present in the table
+(8358948,Qqprxdjixjn,0.6)(2405465,Hlbsxnrae,1.1)(6239849,Qfzosg,3.2)(6071464,Qdoizmunt,2.8)(8215981,Adwls,2.6)(3869311,Dxrtrerl,0.0)(8306789,Gohh,3.0)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(5241177,Iqi,2.2)(6757423,Ywwnbndy,2.9)(3520631,Ophhnlhsszq,1.2)(392857,Mlwqbk,1.9)(4576867,Ktvngqj,1.6)(2638449,Uxm,0.9)(5592632,Xfxs,1.5)(1906688,Epza,0.9)(4023850,Jwgpvlym,0.3)
+item successfully inserted
+(8358948,Qqprxdjixjn,0.6)(2405465,Hlbsxnrae,1.1)(6239849,Qfzosg,3.2)(6071464,Qdoizmunt,2.8)(8215981,Adwls,2.6)(3869311,Dxrtrerl,0.0)(8306789,Gohh,3.0)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(5241177,Iqi,2.2)(8770231,Agz,1.4)(6757423,Ywwnbndy,2.9)(3520631,Ophhnlhsszq,1.2)(392857,Mlwqbk,1.9)(4576867,Ktvngqj,1.6)(2638449,Uxm,0.9)(5592632,Xfxs,1.5)(1906688,Epza,0.9)(4023850,Jwgpvlym,0.3)
+(8358948,Qqprxdjixjn,0.6)(2405465,Hlbsxnrae,1.1)(6239849,Qfzosg,3.2)(6071464,Qdoizmunt,2.8)(8215981,Adwls,2.6)(3869311,Dxrtrerl,0.0)(8306789,Gohh,3.0)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(5241177,Iqi,2.2)(8770231,Agz,1.4)(6757423,Ywwnbndy,2.9)(3520631,Ophhnlhsszq,1.2)(392857,Mlwqbk,1.9)(4576867,Ktvngqj,1.6)(2638449,Uxm,0.9)(5592632,Xfxs,1.5)(1906688,Epza,0.9)(4023850,Jwgpvlym,0.3)
+item not present in the table
+item successfully inserted
+item successfully inserted
+item not present in the table
+(8358948,Qqprxdjixjn,0.6)(2405465,Hlbsxnrae,1.1)(6239849,Qfzosg,3.2)(6071464,Qdoizmunt,2.8)(8215981,Adwls,2.6)(3869311,Dxrtrerl,0.0)(8306789,Gohh,3.0)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(5241177,Iqi,2.2)(8770231,Agz,1.4)(6757423,Ywwnbndy,2.9)(3520631,Ophhnlhsszq,1.2)(392857,Mlwqbk,1.9)(4576867,Ktvngqj,1.6)(2638449,Uxm,0.9)(5592632,Xfxs,1.5)(9664193,Sdw,2.9)(1906688,Epza,0.9)(5851325,Rfdxyxvtfgs,0.5)(4023850,Jwgpvlym,0.3)
+item not present in the table
+item not found
+(8358948,Qqprxdjixjn,0.6)(2405465,Hlbsxnrae,1.1)(6239849,Qfzosg,3.2)(6071464,Qdoizmunt,2.8)(8215981,Adwls,2.6)(3869311,Dxrtrerl,0.0)(8306789,Gohh,3.0)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(5241177,Iqi,2.2)(8770231,Agz,1.4)(6757423,Ywwnbndy,2.9)(3520631,Ophhnlhsszq,1.2)(392857,Mlwqbk,1.9)(4576867,Ktvngqj,1.6)(2638449,Uxm,0.9)(5592632,Xfxs,1.5)(9664193,Sdw,2.9)(1906688,Epza,0.9)(5851325,Rfdxyxvtfgs,0.5)(4023850,Jwgpvlym,0.3)
+item successfully inserted
+item successfully inserted
+item not present in the table
+item not present in the table
+(8358948,Qqprxdjixjn,0.6)(2405465,Hlbsxnrae,1.1)(6239849,Qfzosg,3.2)(6071464,Qdoizmunt,2.8)(8215981,Adwls,2.6)(3869311,Dxrtrerl,0.0)(8306789,Gohh,3.0)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(5241177,Iqi,2.2)(8770231,Agz,1.4)(6757423,Ywwnbndy,2.9)(3520631,Ophhnlhsszq,1.2)(392857,Mlwqbk,1.9)(5207252,Mzpnfa,2.2)(4576867,Ktvngqj,1.6)(2638449,Uxm,0.9)(5592632,Xfxs,1.5)(9664193,Sdw,2.9)(3994837,Fmwvtko,2.8)(1906688,Epza,0.9)(5851325,Rfdxyxvtfgs,0.5)(4023850,Jwgpvlym,0.3)
+item successfully inserted
+item not present in the table
+item not present in the table
+item successfully inserted
+item not present in the table
+item successfully inserted
+item successfully inserted
+item not present in the table
+item not found
+item not found
+item successfully inserted
+item successfully inserted
+item not present in the table
+item successfully inserted
+item successfully inserted
+(2583812,Owktautkkg,3.0)(1555692,Revetueo,3.2)(8358948,Qqprxdjixjn,0.6)(2405465,Hlbsxnrae,1.1)(6239849,Qfzosg,3.2)(6071464,Qdoizmunt,2.8)(714999,Dtwl,1.9)(8215981,Adwls,2.6)(3869311,Dxrtrerl,0.0)(8306789,Gohh,3.0)(4535067,Fdonp,2.4)(7522432,Hsyyzgawi,3.1)(4774144,Kcfwlm,3.1)(4723307,Oolsn,3.8)(5241177,Iqi,2.2)(6355735,Eqsamapp,0.1)(8770231,Agz,1.4)(6757423,Ywwnbndy,2.9)(3520631,Ophhnlhsszq,1.2)(392857,Mlwqbk,1.9)(5998362,Rzy,0.8)(5207252,Mzpnfa,2.2)(3981076,Dkmtwurz,3.5)(4576867,Ktvngqj,1.6)(2638449,Uxm,0.9)(5592632,Xfxs,1.5)(9664193,Sdw,2.9)(3994837,Fmwvtko,2.8)(1906688,Epza,0.9)(5851325,Rfdxyxvtfgs,0.5)(4023850,Jwgpvlym,0.3)
+item not present in the table
+item not present in the table
+item not found
+item not found
+item successfully inserted
+table doubled
+item successfully inserted
+item found; Revetueo 7
+item successfully inserted
+item not found
+item successfully inserted
+item successfully inserted
+(9664193,Sdw,2.9)(4774144,Kcfwlm,3.1)(5957934,Wybgirpdesn,1.6)(1555692,Revetueo,3.2)(6355735,Eqsamapp,0.1)(5427511,Nlspk,1.1)(8770231,Agz,1.4)(4576867,Ktvngqj,1.6)(3994837,Fmwvtko,2.8)(2405465,Hlbsxnrae,1.1)(4535067,Fdonp,2.4)(5851325,Rfdxyxvtfgs,0.5)(4023850,Jwgpvlym,0.3)(5592632,Xfxs,1.5)(6239849,Qfzosg,3.2)(3981076,Dkmtwurz,3.5)(842031,Mhe,1.6)(8358948,Qqprxdjixjn,0.6)(6071464,Qdoizmunt,2.8)(3869311,Dxrtrerl,0.0)(1906688,Epza,0.9)(8215981,Adwls,2.6)(2583812,Owktautkkg,3.0)(5207252,Mzpnfa,2.2)(8306789,Gohh,3.0)(392857,Mlwqbk,1.9)(8721211,Vrb,0.4)(714999,Dtwl,1.9)(5998362,Rzy,0.8)(1255228,Ugusaitnq,3.2)(3520631,Ophhnlhsszq,1.2)(6757423,Ywwnbndy,2.9)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(2638449,Uxm,0.9)(5241177,Iqi,2.2)
+(9664193,Sdw,2.9)(4774144,Kcfwlm,3.1)(5957934,Wybgirpdesn,1.6)(1555692,Revetueo,3.2)(6355735,Eqsamapp,0.1)(5427511,Nlspk,1.1)(8770231,Agz,1.4)(4576867,Ktvngqj,1.6)(3994837,Fmwvtko,2.8)(2405465,Hlbsxnrae,1.1)(4535067,Fdonp,2.4)(5851325,Rfdxyxvtfgs,0.5)(4023850,Jwgpvlym,0.3)(5592632,Xfxs,1.5)(6239849,Qfzosg,3.2)(3981076,Dkmtwurz,3.5)(842031,Mhe,1.6)(8358948,Qqprxdjixjn,0.6)(6071464,Qdoizmunt,2.8)(3869311,Dxrtrerl,0.0)(1906688,Epza,0.9)(8215981,Adwls,2.6)(2583812,Owktautkkg,3.0)(5207252,Mzpnfa,2.2)(8306789,Gohh,3.0)(392857,Mlwqbk,1.9)(8721211,Vrb,0.4)(714999,Dtwl,1.9)(5998362,Rzy,0.8)(1255228,Ugusaitnq,3.2)(3520631,Ophhnlhsszq,1.2)(6757423,Ywwnbndy,2.9)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(2638449,Uxm,0.9)(5241177,Iqi,2.2)
+item not found
+item successfully inserted
+item not found
+(9664193,Sdw,2.9)(4774144,Kcfwlm,3.1)(5957934,Wybgirpdesn,1.6)(1555692,Revetueo,3.2)(6355735,Eqsamapp,0.1)(5427511,Nlspk,1.1)(8770231,Agz,1.4)(4576867,Ktvngqj,1.6)(3994837,Fmwvtko,2.8)(2405465,Hlbsxnrae,1.1)(4535067,Fdonp,2.4)(5851325,Rfdxyxvtfgs,0.5)(4023850,Jwgpvlym,0.3)(5592632,Xfxs,1.5)(6239849,Qfzosg,3.2)(3981076,Dkmtwurz,3.5)(842031,Mhe,1.6)(1199927,Cdnqee,1.1)(8358948,Qqprxdjixjn,0.6)(6071464,Qdoizmunt,2.8)(3869311,Dxrtrerl,0.0)(1906688,Epza,0.9)(8215981,Adwls,2.6)(2583812,Owktautkkg,3.0)(5207252,Mzpnfa,2.2)(8306789,Gohh,3.0)(392857,Mlwqbk,1.9)(8721211,Vrb,0.4)(714999,Dtwl,1.9)(5998362,Rzy,0.8)(1255228,Ugusaitnq,3.2)(3520631,Ophhnlhsszq,1.2)(6757423,Ywwnbndy,2.9)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(2638449,Uxm,0.9)(5241177,Iqi,2.2)
+item successfully inserted
+item successfully inserted
+item not present in the table
+item not present in the table
+(9664193,Sdw,2.9)(4774144,Kcfwlm,3.1)(5957934,Wybgirpdesn,1.6)(1555692,Revetueo,3.2)(6355735,Eqsamapp,0.1)(5427511,Nlspk,1.1)(8770231,Agz,1.4)(4576867,Ktvngqj,1.6)(3994837,Fmwvtko,2.8)(4924757,Hrapct,0.6)(2405465,Hlbsxnrae,1.1)(4535067,Fdonp,2.4)(5851325,Rfdxyxvtfgs,0.5)(4023850,Jwgpvlym,0.3)(5592632,Xfxs,1.5)(6239849,Qfzosg,3.2)(3981076,Dkmtwurz,3.5)(842031,Mhe,1.6)(1199927,Cdnqee,1.1)(8358948,Qqprxdjixjn,0.6)(6071464,Qdoizmunt,2.8)(3869311,Dxrtrerl,0.0)(1906688,Epza,0.9)(8215981,Adwls,2.6)(2583812,Owktautkkg,3.0)(5207252,Mzpnfa,2.2)(8306789,Gohh,3.0)(392857,Mlwqbk,1.9)(8721211,Vrb,0.4)(714999,Dtwl,1.9)(5998362,Rzy,0.8)(1255228,Ugusaitnq,3.2)(3520631,Ophhnlhsszq,1.2)(6757423,Ywwnbndy,2.9)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(2638449,Uxm,0.9)(5241177,Iqi,2.2)(9949017,Nkvd,2.0)
+item successfully inserted
+item not found
+item found; Nkvd 96
+(9664193,Sdw,2.9)(4774144,Kcfwlm,3.1)(5957934,Wybgirpdesn,1.6)(1555692,Revetueo,3.2)(6355735,Eqsamapp,0.1)(5427511,Nlspk,1.1)(8770231,Agz,1.4)(4576867,Ktvngqj,1.6)(3994837,Fmwvtko,2.8)(4924757,Hrapct,0.6)(2405465,Hlbsxnrae,1.1)(4535067,Fdonp,2.4)(5851325,Rfdxyxvtfgs,0.5)(4023850,Jwgpvlym,0.3)(5592632,Xfxs,1.5)(6239849,Qfzosg,3.2)(3981076,Dkmtwurz,3.5)(842031,Mhe,1.6)(1199927,Cdnqee,1.1)(8358948,Qqprxdjixjn,0.6)(6071464,Qdoizmunt,2.8)(3869311,Dxrtrerl,0.0)(1906688,Epza,0.9)(8215981,Adwls,2.6)(2583812,Owktautkkg,3.0)(5207252,Mzpnfa,2.2)(8306789,Gohh,3.0)(392857,Mlwqbk,1.9)(8721211,Vrb,0.4)(714999,Dtwl,1.9)(5998362,Rzy,0.8)(1255228,Ugusaitnq,3.2)(3520631,Ophhnlhsszq,1.2)(6757423,Ywwnbndy,2.9)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(8879980,Zzazs,3.2)(2638449,Uxm,0.9)(5241177,Iqi,2.2)(9949017,Nkvd,2.0)
+item successfully inserted
+item successfully inserted
+(9664193,Sdw,2.9)(4774144,Kcfwlm,3.1)(5957934,Wybgirpdesn,1.6)(1555692,Revetueo,3.2)(6355735,Eqsamapp,0.1)(5427511,Nlspk,1.1)(8770231,Agz,1.4)(4576867,Ktvngqj,1.6)(3994837,Fmwvtko,2.8)(4924757,Hrapct,0.6)(2405465,Hlbsxnrae,1.1)(4535067,Fdonp,2.4)(5851325,Rfdxyxvtfgs,0.5)(1617278,Hnyymqyjhv,0.8)(4023850,Jwgpvlym,0.3)(5592632,Xfxs,1.5)(6239849,Qfzosg,3.2)(3981076,Dkmtwurz,3.5)(842031,Mhe,1.6)(1199927,Cdnqee,1.1)(8358948,Qqprxdjixjn,0.6)(6071464,Qdoizmunt,2.8)(4853825,Orjm,1.9)(3869311,Dxrtrerl,0.0)(1906688,Epza,0.9)(8215981,Adwls,2.6)(2583812,Owktautkkg,3.0)(5207252,Mzpnfa,2.2)(8306789,Gohh,3.0)(392857,Mlwqbk,1.9)(8721211,Vrb,0.4)(714999,Dtwl,1.9)(5998362,Rzy,0.8)(1255228,Ugusaitnq,3.2)(3520631,Ophhnlhsszq,1.2)(6757423,Ywwnbndy,2.9)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(8879980,Zzazs,3.2)(2638449,Uxm,0.9)(5241177,Iqi,2.2)(9949017,Nkvd,2.0)
+item not present in the table
+item not found
+item not found
+item not present in the table
+item not present in the table
+item found; Nlspk 9
+item successfully inserted
+item successfully inserted
+item not present in the table
+(9664193,Sdw,2.9)(4774144,Kcfwlm,3.1)(9174936,Bfwvttrru,0.7)(5957934,Wybgirpdesn,1.6)(1555692,Revetueo,3.2)(6355735,Eqsamapp,0.1)(5427511,Nlspk,1.1)(8770231,Agz,1.4)(4576867,Ktvngqj,1.6)(3994837,Fmwvtko,2.8)(4924757,Hrapct,0.6)(2405465,Hlbsxnrae,1.1)(4535067,Fdonp,2.4)(5851325,Rfdxyxvtfgs,0.5)(1617278,Hnyymqyjhv,0.8)(4023850,Jwgpvlym,0.3)(5592632,Xfxs,1.5)(6239849,Qfzosg,3.2)(3981076,Dkmtwurz,3.5)(842031,Mhe,1.6)(1199927,Cdnqee,1.1)(8358948,Qqprxdjixjn,0.6)(6071464,Qdoizmunt,2.8)(4853825,Orjm,1.9)(3869311,Dxrtrerl,0.0)(1906688,Epza,0.9)(8215981,Adwls,2.6)(842144,Lqqm,3.7)(2583812,Owktautkkg,3.0)(5207252,Mzpnfa,2.2)(8306789,Gohh,3.0)(392857,Mlwqbk,1.9)(8721211,Vrb,0.4)(714999,Dtwl,1.9)(5998362,Rzy,0.8)(1255228,Ugusaitnq,3.2)(3520631,Ophhnlhsszq,1.2)(6757423,Ywwnbndy,2.9)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(8879980,Zzazs,3.2)(2638449,Uxm,0.9)(5241177,Iqi,2.2)(9949017,Nkvd,2.0)
+(9664193,Sdw,2.9)(4774144,Kcfwlm,3.1)(9174936,Bfwvttrru,0.7)(5957934,Wybgirpdesn,1.6)(1555692,Revetueo,3.2)(6355735,Eqsamapp,0.1)(5427511,Nlspk,1.1)(8770231,Agz,1.4)(4576867,Ktvngqj,1.6)(3994837,Fmwvtko,2.8)(4924757,Hrapct,0.6)(2405465,Hlbsxnrae,1.1)(4535067,Fdonp,2.4)(5851325,Rfdxyxvtfgs,0.5)(1617278,Hnyymqyjhv,0.8)(4023850,Jwgpvlym,0.3)(5592632,Xfxs,1.5)(6239849,Qfzosg,3.2)(3981076,Dkmtwurz,3.5)(842031,Mhe,1.6)(1199927,Cdnqee,1.1)(8358948,Qqprxdjixjn,0.6)(6071464,Qdoizmunt,2.8)(4853825,Orjm,1.9)(3869311,Dxrtrerl,0.0)(1906688,Epza,0.9)(8215981,Adwls,2.6)(842144,Lqqm,3.7)(2583812,Owktautkkg,3.0)(5207252,Mzpnfa,2.2)(8306789,Gohh,3.0)(392857,Mlwqbk,1.9)(8721211,Vrb,0.4)(714999,Dtwl,1.9)(5998362,Rzy,0.8)(1255228,Ugusaitnq,3.2)(3520631,Ophhnlhsszq,1.2)(6757423,Ywwnbndy,2.9)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(8879980,Zzazs,3.2)(2638449,Uxm,0.9)(5241177,Iqi,2.2)(9949017,Nkvd,2.0)
+item successfully inserted
+(9664193,Sdw,2.9)(4774144,Kcfwlm,3.1)(9174936,Bfwvttrru,0.7)(5957934,Wybgirpdesn,1.6)(1555692,Revetueo,3.2)(6355735,Eqsamapp,0.1)(5427511,Nlspk,1.1)(8770231,Agz,1.4)(4576867,Ktvngqj,1.6)(3994837,Fmwvtko,2.8)(4924757,Hrapct,0.6)(2405465,Hlbsxnrae,1.1)(4535067,Fdonp,2.4)(5851325,Rfdxyxvtfgs,0.5)(1617278,Hnyymqyjhv,0.8)(4023850,Jwgpvlym,0.3)(5592632,Xfxs,1.5)(6239849,Qfzosg,3.2)(3981076,Dkmtwurz,3.5)(842031,Mhe,1.6)(1199927,Cdnqee,1.1)(8358948,Qqprxdjixjn,0.6)(6071464,Qdoizmunt,2.8)(4853825,Orjm,1.9)(3869311,Dxrtrerl,0.0)(1906688,Epza,0.9)(8215981,Adwls,2.6)(842144,Lqqm,3.7)(2583812,Owktautkkg,3.0)(8497069,Rezug,1.7)(5207252,Mzpnfa,2.2)(8306789,Gohh,3.0)(392857,Mlwqbk,1.9)(8721211,Vrb,0.4)(714999,Dtwl,1.9)(5998362,Rzy,0.8)(1255228,Ugusaitnq,3.2)(3520631,Ophhnlhsszq,1.2)(6757423,Ywwnbndy,2.9)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(8879980,Zzazs,3.2)(2638449,Uxm,0.9)(5241177,Iqi,2.2)(9949017,Nkvd,2.0)
+item not present in the table
+item not found
+(9664193,Sdw,2.9)(4774144,Kcfwlm,3.1)(9174936,Bfwvttrru,0.7)(5957934,Wybgirpdesn,1.6)(1555692,Revetueo,3.2)(6355735,Eqsamapp,0.1)(5427511,Nlspk,1.1)(8770231,Agz,1.4)(4576867,Ktvngqj,1.6)(3994837,Fmwvtko,2.8)(4924757,Hrapct,0.6)(2405465,Hlbsxnrae,1.1)(4535067,Fdonp,2.4)(5851325,Rfdxyxvtfgs,0.5)(1617278,Hnyymqyjhv,0.8)(4023850,Jwgpvlym,0.3)(5592632,Xfxs,1.5)(6239849,Qfzosg,3.2)(3981076,Dkmtwurz,3.5)(842031,Mhe,1.6)(1199927,Cdnqee,1.1)(8358948,Qqprxdjixjn,0.6)(6071464,Qdoizmunt,2.8)(4853825,Orjm,1.9)(3869311,Dxrtrerl,0.0)(1906688,Epza,0.9)(8215981,Adwls,2.6)(842144,Lqqm,3.7)(2583812,Owktautkkg,3.0)(8497069,Rezug,1.7)(5207252,Mzpnfa,2.2)(8306789,Gohh,3.0)(392857,Mlwqbk,1.9)(8721211,Vrb,0.4)(714999,Dtwl,1.9)(5998362,Rzy,0.8)(1255228,Ugusaitnq,3.2)(3520631,Ophhnlhsszq,1.2)(6757423,Ywwnbndy,2.9)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(8879980,Zzazs,3.2)(2638449,Uxm,0.9)(5241177,Iqi,2.2)(9949017,Nkvd,2.0)
+item not present in the table
+item successfully inserted
+(9664193,Sdw,2.9)(4774144,Kcfwlm,3.1)(9174936,Bfwvttrru,0.7)(5957934,Wybgirpdesn,1.6)(1555692,Revetueo,3.2)(6355735,Eqsamapp,0.1)(5427511,Nlspk,1.1)(8770231,Agz,1.4)(4576867,Ktvngqj,1.6)(3994837,Fmwvtko,2.8)(4924757,Hrapct,0.6)(2405465,Hlbsxnrae,1.1)(4535067,Fdonp,2.4)(5851325,Rfdxyxvtfgs,0.5)(1617278,Hnyymqyjhv,0.8)(4023850,Jwgpvlym,0.3)(5592632,Xfxs,1.5)(6239849,Qfzosg,3.2)(3981076,Dkmtwurz,3.5)(842031,Mhe,1.6)(1199927,Cdnqee,1.1)(8358948,Qqprxdjixjn,0.6)(6071464,Qdoizmunt,2.8)(4853825,Orjm,1.9)(3869311,Dxrtrerl,0.0)(1906688,Epza,0.9)(8215981,Adwls,2.6)(842144,Lqqm,3.7)(2583812,Owktautkkg,3.0)(8497069,Rezug,1.7)(5207252,Mzpnfa,2.2)(8306789,Gohh,3.0)(392857,Mlwqbk,1.9)(1537982,Fxnq,3.7)(8721211,Vrb,0.4)(714999,Dtwl,1.9)(5998362,Rzy,0.8)(1255228,Ugusaitnq,3.2)(3520631,Ophhnlhsszq,1.2)(6757423,Ywwnbndy,2.9)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(8879980,Zzazs,3.2)(2638449,Uxm,0.9)(5241177,Iqi,2.2)(9949017,Nkvd,2.0)
+item successfully inserted
+item not present in the table
+(9664193,Sdw,2.9)(4774144,Kcfwlm,3.1)(9174936,Bfwvttrru,0.7)(5957934,Wybgirpdesn,1.6)(1555692,Revetueo,3.2)(6355735,Eqsamapp,0.1)(5427511,Nlspk,1.1)(8770231,Agz,1.4)(9892427,Otzberwcs,1.3)(4576867,Ktvngqj,1.6)(3994837,Fmwvtko,2.8)(4924757,Hrapct,0.6)(2405465,Hlbsxnrae,1.1)(4535067,Fdonp,2.4)(5851325,Rfdxyxvtfgs,0.5)(1617278,Hnyymqyjhv,0.8)(4023850,Jwgpvlym,0.3)(5592632,Xfxs,1.5)(6239849,Qfzosg,3.2)(3981076,Dkmtwurz,3.5)(842031,Mhe,1.6)(1199927,Cdnqee,1.1)(8358948,Qqprxdjixjn,0.6)(6071464,Qdoizmunt,2.8)(4853825,Orjm,1.9)(3869311,Dxrtrerl,0.0)(1906688,Epza,0.9)(8215981,Adwls,2.6)(842144,Lqqm,3.7)(2583812,Owktautkkg,3.0)(8497069,Rezug,1.7)(5207252,Mzpnfa,2.2)(8306789,Gohh,3.0)(392857,Mlwqbk,1.9)(1537982,Fxnq,3.7)(8721211,Vrb,0.4)(714999,Dtwl,1.9)(5998362,Rzy,0.8)(1255228,Ugusaitnq,3.2)(3520631,Ophhnlhsszq,1.2)(6757423,Ywwnbndy,2.9)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(8879980,Zzazs,3.2)(2638449,Uxm,0.9)(5241177,Iqi,2.2)(9949017,Nkvd,2.0)
+item not found
+(9664193,Sdw,2.9)(4774144,Kcfwlm,3.1)(9174936,Bfwvttrru,0.7)(5957934,Wybgirpdesn,1.6)(1555692,Revetueo,3.2)(6355735,Eqsamapp,0.1)(5427511,Nlspk,1.1)(8770231,Agz,1.4)(9892427,Otzberwcs,1.3)(4576867,Ktvngqj,1.6)(3994837,Fmwvtko,2.8)(4924757,Hrapct,0.6)(2405465,Hlbsxnrae,1.1)(4535067,Fdonp,2.4)(5851325,Rfdxyxvtfgs,0.5)(1617278,Hnyymqyjhv,0.8)(4023850,Jwgpvlym,0.3)(5592632,Xfxs,1.5)(6239849,Qfzosg,3.2)(3981076,Dkmtwurz,3.5)(842031,Mhe,1.6)(1199927,Cdnqee,1.1)(8358948,Qqprxdjixjn,0.6)(6071464,Qdoizmunt,2.8)(4853825,Orjm,1.9)(3869311,Dxrtrerl,0.0)(1906688,Epza,0.9)(8215981,Adwls,2.6)(842144,Lqqm,3.7)(2583812,Owktautkkg,3.0)(8497069,Rezug,1.7)(5207252,Mzpnfa,2.2)(8306789,Gohh,3.0)(392857,Mlwqbk,1.9)(1537982,Fxnq,3.7)(8721211,Vrb,0.4)(714999,Dtwl,1.9)(5998362,Rzy,0.8)(1255228,Ugusaitnq,3.2)(3520631,Ophhnlhsszq,1.2)(6757423,Ywwnbndy,2.9)(7522432,Hsyyzgawi,3.1)(4723307,Oolsn,3.8)(8879980,Zzazs,3.2)(2638449,Uxm,0.9)(5241177,Iqi,2.2)(9949017,Nkvd,2.0)
+item not present in the table
+item successfully inserted
+item successfully inserted
+item not present in the table
+item not present in the table
+item found; Sdw 0
+item not found
+(9664193,Sdw,2.9)(4774144,Kcfwlm,3.1)(9174936,Bfwvttrru,0.7)(5957934,Wybgirpdesn,1.6)(1555692,Revetueo,3.2)(6355735,Eqsamapp,0.1)(5427511,Nlspk,1.1)(4290008,Vbhwpzlmfzi,2.9)(8770231,Agz,1.4)(9892427,Otzberwcs,1.3)(4576867,Ktvngqj,1.6)(3994837,Fmwvtko,2.8)(4924757,Hrapct,0.6)(2405465,Hlbsxnrae,1.1)(4535067,Fdonp,2.4)(5851325,Rfdxyxvtfgs,0.5)(1617278,Hnyymqyjhv,0.8)(4023850,Jwgpvlym,0.3)(5592632,Xfxs,1.5)(6239849,Qfzosg,3.2)(3981076,Dkmtwurz,3.5)(842031,Mhe,1.6)(1199927,Cdnqee,1.1)(8358948,Qqprxdjixjn,0.6)(6071464,Qdoizmunt,2.8)(4853825,Orjm,1.9)(3869311,Dxrtrerl,0.0)(1906688,Epza,0.9)(8215981,Adwls,2.6)(842144,Lqqm,3.7)(2583812,Owktautkkg,3.0)(8497069,Rezug,1.7)(5207252,Mzpnfa,2.2)(8306789,Gohh,3.0)(392857,Mlwqbk,1.9)(1537982,Fxnq,3.7)(8721211,Vrb,0.4)(714999,Dtwl,1.9)(5998362,Rzy,0.8)(1255228,Ugusaitnq,3.2)(3520631,Ophhnlhsszq,1.2)(6757423,Ywwnbndy,2.9)(7522432,Hsyyzgawi,3.1)(3237849,Wmfphjzr,3.2)(4723307,Oolsn,3.8)(8879980,Zzazs,3.2)(2638449,Uxm,0.9)(5241177,Iqi,2.2)(9949017,Nkvd,2.0)
+item successfully inserted
+item not found
+item successfully inserted
+item successfully inserted
+item successfully inserted
+item successfully inserted
+item not found
+item successfully deleted
+item successfully inserted
+item not present in the table
+item not present in the table
+item successfully inserted

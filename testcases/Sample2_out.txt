@@ -1,0 +1,16 @@
+item successfully inserted
+item successfully inserted
+item successfully inserted
+item already present
+item already present
+(2375772,name1,3.0)(1234567,name0,2.0)(2345672,name2,4.0)
+table doubled
+item successfully inserted
+item not present in the table
+item not found
+item found; name1 1
+item successfully deleted
+(1234567,name0,2.0)(5432101,name22,3.1)(2345672,name2,4.0)
+item successfully inserted
+item found; name1 1
+(2375772,name1,3.0)(1234567,name0,2.0)(5432101,name22,3.1)(2345672,name2,4.0)

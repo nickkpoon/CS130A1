@@ -1,0 +1,16 @@
+doublehashing
+insert 1234567 name0 2.0
+insert 2375772 name1 3.0
+insert 2345672 name2 4.0
+insert 1234567 name0 2.0
+insert 1234567 name5 2.7
+print
+insert 5432101 name22 3.1
+delete 2
+lookup 3
+lookup 2375772
+delete 2375772
+print
+insert 2375772 name1 3.0
+lookup 2375772
+print
