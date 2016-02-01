@@ -1,4 +1,14 @@
-//CS130A PROJECT 1 DOUBLEHASHING BY: NICHOLAS POON
+/*
+
+CS130A WINT2016 PROJECT 1 
+
+BY: NICHOLAS POON
+DATE: 1/31/2016
+INSTRUCTOR: AMR EL ABBADI
+COURSE: CS130A
+
+*/
+
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
@@ -340,7 +350,7 @@ int main()
                     }
                     i = i + 1.0;
                     factor = (i / htable->size);
-                    if (factor >=    0.71)
+                    if (factor >= 0.71)
                     {
                         htable = rehash(htable);
                         cout<<"table doubled"<<endl;
