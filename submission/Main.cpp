@@ -229,7 +229,7 @@ int main()
     int choice;
     HashTable *htable;
     htable = initializeTable(5);
-    double factor = 0.00;
+    double factor, load = 0.00;
 
 
     getline(cin,hashkind);
@@ -363,10 +363,10 @@ int main()
                         cout<<"item already present"<<endl;
                         break;
                     }
-                    i++;
+                    i = i + 1.0;
                     factor = (i / htable->size);
-                    cout<<factor;
-                    if (factor > 0.7)
+                    cout<< std::fixed<<std::setprecision(2)<<factor;
+                    if (factor > 0.701)
                     {
                         htable = Rehash(htable);
                         cout<<"table doubled"<<endl;
